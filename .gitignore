@@ -4,12 +4,19 @@ tools/
 __pycache__/
 *.pyc
 
+# spec-kit 运行时产物（保留 .specify 模板，忽略其缓存与本地状态）
+.specify/cache/
+.specify/feature.json
+.specify/extensions/*/local-config.yml
+
+# AI 助手在本项目里的本地技能目录
+# spec-kit 自己的安全提醒：agent 目录可能存放凭据/令牌等私有产物
+# 这些技能是 init 生成、可随时重建的，所以不进仓库
+.dsh/
+
 # 临时目录与本地工具
 .tmp/
 .wheels/
-
-# spec-kit 运行时产物（保留 .specify 模板，忽略其缓存）
-.specify/cache/
 
 # 编辑器 / 系统
 .vscode/*
