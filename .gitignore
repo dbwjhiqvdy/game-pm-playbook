@@ -1,0 +1,20 @@
+# Python
+.venv/
+tools/
+__pycache__/
+*.pyc
+
+# 临时目录与本地工具
+.tmp/
+.wheels/
+
+# spec-kit 运行时产物（保留 .specify 模板，忽略其缓存）
+.specify/cache/
+
+# 编辑器 / 系统
+.vscode/*
+!.vscode/settings.json
+.idea/
+Thumbs.db
+desktop.ini
+~$*
