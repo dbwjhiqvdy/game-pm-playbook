@@ -1,7 +1,7 @@
 # Concept: Roguelike 关卡可达性验证 —— 三条路径与代价
 
 - **Slug**: level-editor
-- **Created**: 2026-10-02
+- **Created**: 2026-10-04
 - **Recommended option**: **Option A（分阶段：先测基线 → 再决定是否做校验扩展）**，且**该推荐是条件性的**——Step 0 的数据可能直接导向"什么都不做"
 
 > **阶段纪律**：以下仅为概念层方案与代价，**不含规格、架构、数据模型、API 设计或任务拆分**（那属于 `/speckit-specify` 之后的工作）。

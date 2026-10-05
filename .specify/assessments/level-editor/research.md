@@ -1,7 +1,7 @@
 # Idea Research: 自研 Roguelike 关卡编辑器
 
 - **Slug**: level-editor
-- **Created**: 2026-10-02
+- **Created**: 2026-10-04
 - **Evidence confidence (overall)**: medium
 
 > **阶段纪律**：本文件**只呈现证据，不裁定生死、不设计解决方案**。最终 verdict 由 `decide` 阶段给出。
