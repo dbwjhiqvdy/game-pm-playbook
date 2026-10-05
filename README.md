@@ -63,7 +63,7 @@
 | v0.1 | 初稿：双门禁中只有交付物标准；复盘固定 1–2 个行动项 | — |
 | v0.2 | 门禁改为**质量锁 + 时间锁**，里程碑必须写明**延期成本/天**与**超期默认动作** | 只卡交付物等于允许无限期打磨，延期的人力开销无人承担 |
 | v0.2 | 复盘行动项改为**改进预算制 + 完成率校正**，落选想法进**观察池** | 固定条数在小改动时太少、大改动时不够；该管的是总投入 |
-| **v0.3** | DoR 三处措辞收紧：`core_loop` 增加**工程/工具类需求例外**、`edge_cases` 明确「至少一个具体异常 + 期望行为」、`dependencies` 要求**确认性表述**且无依赖须明确声明 | 在配套的需求预审工具（独立仓库 `req-precheck`）的标注复核中发现：同一形态的文本在三处得到不同判定。**收紧后旧 30 条标注零翻转**，确认属消除歧义而非移动标准 |
+| **v0.3** | DoR 三处措辞收紧：`core_loop` 增加**工程/工具类需求例外**、`edge_cases` 明确「至少一个具体异常 + 期望行为」、`dependencies` 要求**确认性表述**且无依赖须明确声明 | 在配套的需求预审工具（独立仓库 [`req-precheck`](https://github.com/dbwjhiqvdy/req-precheck)）的标注复核中发现：同一形态的文本在三处得到不同判定。**收紧后旧 30 条标注零翻转**，确认属消除歧义而非移动标准 |
 
 > ⚠️ **v0.3 的闭环意义**：规范 → 工具（把规范写成 rubric）→ 用工具做评测 → 评测暴露规范的措辞歧义 → 回写规范。
 > 这条链路证明规范不是一次性文档，而是**可被检验、可迭代**的东西。
@@ -78,3 +78,9 @@
 - [architecture-decision-record](https://github.com/architecture-decision-record/architecture-decision-record)（ADR 决策记录体系）→ 改造为**GDR 游戏决策记录**
 - [mindfulcto-labs/engineering-standards](https://github.com/mindfulcto-labs/engineering-standards)（12 阶段研发生命周期 + DoR/DoD + 检查清单）→ 骨架来源，本地化为游戏阶段
 - [cgwire/kitsu](https://github.com/cgwire/kitsu)（动画/VFX/游戏工作室协作平台，**官方自带「电子游戏术语层」**：`Shot→Map`、`Sequence→Level`、`Episode→Chapter`）→ 借鉴「以交付物和版本为中心」的追踪方式
+---
+
+## 相关仓库
+
+- **[req-precheck](https://github.com/dbwjhiqvdy/req-precheck)** —— 需求预审工具：把本文档的 DoR 清单写成可执行规则，用 LLM 做评审前预审，并用人工标注数据评测效果。
+  **本文档的 v0.3 修订就是由它的标注复核发现的措辞歧义驱动的。**
